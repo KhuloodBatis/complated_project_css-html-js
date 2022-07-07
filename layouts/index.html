@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Postcss</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <!-- \olw-carousel2 library -->
+    <link rel="stylesheet" href="./css/owl.carousel.main.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <!-- Start Header Section -->
+
+    <header class="h-screen font-maven ">
+        <!-- container -->
+        <div class="container mx-auto navbar ">
+            <!-- nave bar -->
+            <div>
+                <!-- go to home page  -->
+                <a href="/" class="text-2xl py-2 flex gap-x-5 ">
+                    <!-- icon -->
+                    <img src="../img/diamond.svg" alt="" class="h-7 w-6 text-3xl  mx-2 " aria-hidden="true">
+
+                    <!-- word -->
+                    <span class="font-bold ">Marvel</span>
+                </a>
+            </div>
+            <!-- list page name's -->
+
+            <button id="toggle" class=" menuIcon  ">
+                <svg xmlns="http://www.w3.org/2000/svg " class="h-6 w-6 " viewBox="0 0 24 24 " stroke="currentColor " stroke-width="2 ">
+                    <path stroke-linecap="round " stroke-linejoin="round " d="M4 6h16M4 12h16M4 18h16 "></path>
+                  </svg>
+                <title>menu</title>
+        </button>
+
+
+            <div class=" menuItems mx-auto" id="nav">
+                <ul class="pt-5 ul ">
+                    <li class="py-2 mx-4 ">
+                        <a href="#" class="capitalize">about</a>
+                    </li>
+                    <li class="py-2 mx-4 ">
+                        <a href="# " class="capitalize">projects</a>
+                    </li>
+                    <li class="py-2 mx-4">
+                        <a href="#" class="capitalize">resume</a>
+                    </li>
+                    <li class="py-2 mx-4 ">
+                        <a href="#" class="capitalize">contact</a>
+                    </li>
+
+                </ul>
+                <div class="colorMode">
+                    <!-- Color Mode -->
+                    <img src="../img/moon.svg" alt="" class="h-4 w-4 " aria-hidden="true">
+                    <span class="font-bold">Color mode</span>
+                </div>
+
+            </div>
+            <!-- End nave basr -->
+        </div>
+        <!-- end container -->
+        <!-- container -->
+        <div class="sm:w-full  px-2 pt-[128px]  pb-[128px]">
+            <div class="container  mx-auto header-hero  ">
+                <div class="md:flex-col">
+                    <div class="sm:w-full  px-2 pt-[128px]">
+                        <span class="welcom"> welcom to my portfolio website!</span>
+                        <h1 class="hey">Hey folks, I'm Marvel Sann Web DesignerUI Specialist</h1>
+                        <p class="building">Building a successful product is a challenge. I am highly energetic in user experience design,interfaces and web development.</p>
+                    </div>
+                    <div class="w-full ">
+                        <button class=" btn  sm:w-auto bg-grey  text-textColor mt-10  ">
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                            download resume
+                        </div>
+                    </button>
+                        <button class=" btn  sm:w-auto bg-secondryColor  text-white  my-4 ">get a free quote</button>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex">
+                    <img src="../img/image_header.svg" alt="image_header" class="w-">
+                </div>
+            </div>
+            <!-- end container -->
+        </div>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </header>
+    <!-- End Header Section -->
+    <!-- start project section -->
+    <div class="container mx-auto">
+        <div>
+            <h2>
+                Things I have designed for digital media agencies
+            </h2>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <img src="../img/project-image01.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="../img/project-image02.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="../img/project-image03.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="../img/project-image04.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="../img/project-image05.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end project section -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.main.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+            @tailwind base;
+            @tailwind components;
+            .navbar {
+                @apply px-4 py-2 pt-4 flex justify-between flex-wrap;
+            }
+            
+            @screen md {
+                .navbar {
+                    @apply px-2;
+                }
+            }
+            
+            .menuIcon {
+                @apply cursor-pointer self-center px-4 py-4;
+            }
+            
+            @screen md {
+                .menuIcon {
+                    @apply hidden;
+                }
+            }
+            
+            .menuItems {
+                @apply w-full text-center;
+            }
+            
+            @screen md {
+                .menuItems {
+                    @apply flex w-auto text-center;
+                }
+            }
+            
+            @screen md {
+                .ul {
+                    @apply pt-0 flex flex-grow justify-center
+                }
+            }
+            
+            .colorMode {
+                @apply flex float-right px-[130px] gap-x-3
+            }
+            
+            @screen md {
+                .colorMode {
+                    @apply flex justify-center mt-5 px-[160px]
+                }
+            }
+            
+            .header-hero {
+                @apply flex px-4 flex-col justify-center;
+            }
+            
+            @screen md {
+                .header-hero {
+                    @apply px-4 flex-row
+                }
+            }
+            
+            .welcom {
+                @apply px-4 py-2 font-semibold text-textColor capitalize;
+            }
+            
+            .hey {
+                @apply text-4xl font-semibold my-4;
+            }
+            
+            .building {
+                @apply mb-4 text-textColor tracking-wide text-lg;
+            }
+            
+            .btn {
+                @apply w-full mx-2 px-8 py-3 font-semibold rounded-3xl;
+            }
+            
+            .owl-stage>img {
+                @apply max-w-6xl inline-block !important
+            }
+            
+            @tailwind utilities;
