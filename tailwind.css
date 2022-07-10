@@ -1,79 +1,179 @@
-            @tailwind base;
-            @tailwind components;
+        @tailwind base;
+        @tailwind components;
+        .navbar {
+            @apply px-4 py-2 pt-4 flex justify-between flex-wrap;
+        }
+        
+        @screen md {
             .navbar {
-                @apply px-4 py-2 pt-4 flex justify-between flex-wrap;
+                @apply px-2;
             }
-            
-            @screen md {
-                .navbar {
-                    @apply px-2;
-                }
-            }
-            
+        }
+        
+        .menuIcon {
+            @apply cursor-pointer px-4 py-4;
+        }
+        
+        @screen md {
             .menuIcon {
-                @apply cursor-pointer self-center px-4 py-4;
+                @apply hidden;
             }
-            
-            @screen md {
-                .menuIcon {
-                    @apply hidden;
-                }
-            }
-            
+        }
+        
+        .menuItems {
+            @apply text-center hidden;
+        }
+        
+        @screen md {
             .menuItems {
-                @apply w-full text-center;
+                @apply flex text-center;
             }
-            
-            @screen md {
-                .menuItems {
-                    @apply flex w-auto text-center;
-                }
+        }
+        
+        @screen md {
+            .ul {
+                @apply pt-0 flex flex-grow justify-center
             }
-            
-            @screen md {
-                .ul {
-                    @apply pt-0 flex flex-grow justify-center
-                }
-            }
-            
+        }
+        
+        .colorMode {
+            @apply flex float-right px-[130px] gap-x-3
+        }
+        
+        @screen md {
             .colorMode {
-                @apply flex float-right px-[130px] gap-x-3
+                @apply flex justify-center mt-5 px-[160px]
             }
-            
-            @screen md {
-                .colorMode {
-                    @apply flex justify-center mt-5 px-[160px]
-                }
-            }
-            
+        }
+        
+        .header-hero {
+            @apply flex px-4 flex-col justify-center;
+        }
+        
+        @screen md {
             .header-hero {
-                @apply flex px-4 flex-col justify-center;
+                @apply px-4 flex-row
             }
-            
-            @screen md {
-                .header-hero {
-                    @apply px-4 flex-row
-                }
+        }
+        
+        .welcom {
+            @apply px-4 py-2 font-semibold text-textColor capitalize;
+        }
+        
+        .hey {
+            @apply text-4xl font-semibold my-4;
+        }
+        
+        .building {
+            @apply mb-4 text-textColor tracking-wide text-lg;
+        }
+        
+        .btn {
+            @apply w-full mx-2 px-8 py-3 font-semibold rounded-3xl;
+        }
+        
+        .owl-stage>img {
+            @apply max-w-6xl inline-block !important
+        }
+        
+        .owl-prev>span {
+            @apply hidden
+        }
+        
+        .owl-prev::before {
+            content: "\f060";
+            background: none;
+            padding: 0;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translate(0;
+            -50%);
+            font-family: "FontAwesome";
+            color: #47465A;
+            font-size: 70px;
+            left: 10px;
+            -webkit-text-stroke: 3px white;
+        }
+        
+        .owl-next>span {
+            @apply hidden
+        }
+        
+        .owl-next::before {
+            content: "\f061";
+            background: none;
+            padding: 0;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translate(0;
+            -50%);
+            font-family: "FontAwesome";
+            color: #47465A;
+            font-size: 70px;
+            right: 10px;
+            -webkit-text-stroke: 3px white;
+        }
+        
+        @screen md {
+            .owl-prev::before {
+                left: 2px;
+                font-size: 60px;
             }
-            
-            .welcom {
-                @apply px-4 py-2 font-semibold text-textColor capitalize;
+            .owl-next::before {
+                right: 2px;
+                font-size: 60px;
             }
-            
-            .hey {
-                @apply text-4xl font-semibold my-4;
-            }
-            
-            .building {
-                @apply mb-4 text-textColor tracking-wide text-lg;
-            }
-            
-            .btn {
-                @apply w-full mx-2 px-8 py-3 font-semibold rounded-3xl;
-            }
-            
-            .owl-stage>img {
-                @apply max-w-6xl inline-block !important
-            }
-            
-            @tailwind utilities;
+        }
+        
+        .timeline-yr>span {
+            top: 50 %;
+            left: 50%;
+            @apply absolute text-white font-semibold transform -translate-x-1/2 translate-y-6;
+        }
+        
+        .timeline::before {
+            content: "";
+            background: #47465A;
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            left: 38px;
+        }
+        
+        .timeline-yr {
+            @apply w-20 h-20 bg-secondryColor rounded-full relative float-left mr-4;
+        }
+        
+        .timeline-type {
+            @apply capitalize font-bold text-4xl text-headingColor mb-8;
+        }
+        
+        .timeline-title {
+            @apply capitalize text-headingColor font-bold text-2xl ml-4;
+        }
+        
+        .timeline-subtitle {
+            @apply capitalize text-base text-secondryColor font-black;
+        }
+        
+        .timeline-pragraph {
+            @apply text-textColor tracking-wide text-lg font-light ml-24;
+        }
+        
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 400px;
+            width: 500px;
+        }
+        
+        .gmap_canvas {
+            overflow: hidden;
+            background: none!important;
+            height: 400px;
+            width: 500px;
+        }
+        
+        @tailwind utilities;

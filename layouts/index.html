@@ -10,23 +10,25 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- \olw-carousel2 library -->
     <link rel="stylesheet" href="./css/owl.carousel.main.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- styles.css -->
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- <style>
+    <style>
         #menu-toggle:checked+#menu {
             display: block;
         }
-    </style> -->
+    </style>
 
 </head>
 
 <body>
     <!-- Start Header Section -->
 
-    <header class="h-screen font-maven ">
+    <header class="h-auto xl:h-screen font-maven mx-auto ">
         <!-- container -->
         <div class="container mx-auto navbar ">
             <!-- nave bar -->
@@ -42,16 +44,23 @@
             </div>
             <!-- list page name's -->
 
-            <button id="toggle" class=" menuIcon  ">
-                <svg xmlns="http://www.w3.org/2000/svg " class="h-6 w-6 " viewBox="0 0 24 24 " stroke="currentColor " stroke-width="2 ">
-                    <path stroke-linecap="round " stroke-linejoin="round " d="M4 6h16M4 12h16M4 18h16 "></path>
-                  </svg>
-                <title>menu</title>
-        </button>
+            <label for="menu-toggle" class="menuIcon">
+                <svg
+                  class="fill-current text-gray-900"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
 
 
-            <div class=" menuItems mx-auto" id="nav">
-                <ul class="pt-5 ul ">
+            <div class="menuItems   " id="menu">
+                <ul class="pt-5 ul  ">
                     <li class="py-2 mx-4 ">
                         <a href="#" class="capitalize">about</a>
                     </li>
@@ -82,7 +91,8 @@
                 <div class="md:flex-col">
                     <div class="sm:w-full  px-2 pt-[128px]">
                         <span class="welcom"> welcom to my portfolio website!</span>
-                        <h1 class="hey">Hey folks, I'm Marvel Sann Web DesignerUI Specialist</h1>
+                        <h1 class="hey">Hey folks, I'm <span class="element-hey text-yellow-400"></span></h1>
+
                         <p class="building">Building a successful product is a challenge. I am highly energetic in user experience design,interfaces and web development.</p>
                     </div>
                     <div class="w-full ">
@@ -104,17 +114,17 @@
             </div>
             <!-- end container -->
         </div>
-        <script type="text/javascript" src="./js/script.js"></script>
+
     </header>
     <!-- End Header Section -->
     <!-- start project section -->
-    <div class="container mx-auto">
-        <div>
-            <h2>
+    <div class="container mx-auto text-center pb-16 ">
+        <div class="max-w-4xl md:max-w-3xl mt-6  px-12 mx-auto ">
+            <h2 class="text-3xl md:text-4xl  font-black text-headingColor   ">
                 Things I have designed for digital media agencies
             </h2>
         </div>
-        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag text-center">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
                     <div class="owl-item">
@@ -139,9 +149,151 @@
     </div>
 
     <!-- end project section -->
+
+    <!-- start Timeline -->
+    <div class="container mx-auto px-8 font-maven pb-20">
+        <div class="flex flex-col lg:flex-row ">
+            <div class="w-full lg:w-1/2 lg:ml-8">
+                <h2 class="timeline-type ">experiences</h2>
+                <div class="timeline relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">Project manager</span>
+                            <span class=" timeline-subtitle"> best studio</span>
+                        </h3>
+                        <p class="timeline-pragraph"> proin oranare non purus ut ruturn. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. cras ac fermentum nunc,a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2018</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">UX designer</span>
+                            <span class="timeline-subtitle">digital ace</span>
+                        </h3>
+                        <p class="timeline-pragraph"> Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2016</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">UI freelancer</span>
+                            <span class="timeline-subtitle"> digital ace</span>
+                        </h3>
+                        <p class="timeline-pragraph"> Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+                <div class=" relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2014</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">junior designer</span>
+                            <span class="timeline-subtitle"> crafted co.</span>
+                        </h3>
+                        <p class="timeline-pragraph"> Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 lg:ml-8">
+                <h2 class="timeline-type"> educations</h2>
+                <div class="timeline relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2017</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class=" timeline-title">mobile web</span>
+                            <span class="timeline-subtitle">master design</span>
+                        </h3>
+                        <p class="timeline-pragraph">Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2015</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">user interfaces</span>
+                            <span class="timeline-subtitle">creative agency</span>
+                        </h3>
+                        <p class="timeline-pragraph"> Tooplate is a great website to download HTML templates without any login or email.</p>
+                    </div>
+                </div>
+                <div class=" relative pb-4">
+                    <div class=" timeline-yr ">
+                        <span>2013</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-title">artwork design</span>
+                            <span class="timeline-subtitle"> new art school</span>
+                        </h3>
+                        <p class="timeline-pragraph"> You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end Timeline -->
+
+    <!-- start contact section -->
+    <div class="container mx-auto  w-auto pl-5 pr-5 ">
+        <div class="flex flex-wrap lg:flex-no-wrap  ">
+
+            <div class="w-auto lg:w-1/2  xl:pl-40 p-10">
+                <div class="mapouter ">
+                    <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Theater%20District&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br>
+                        <a href="https://www.embedgooglemap.net">google maps embed html</a>
+                    </div>
+
+                    <div class="p-8 bg-secondryColor text-white h-40 mb-5  ">
+                        <div class="float-left text-left">
+                            <h4 class="text-3xl font-bold mb-5">Say hello</h4>
+                            <p>010 020 0960</p>
+                            <a href="#">hello@company.co</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="https://dribbble.com/"><i class="fa fa-dribbble mb-2 text-lg block" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram mb-2 text-lg block" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube-square mb-2 text-lg block" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-auto my-8 flex-wrap  lg:w-1/2  p-5 lg:pl-40">
+                <h3 class="text-3xl md:text-4xl  font-black text-headingColor mb-6 w-full xl:w-3/4 ">Interested to work togther? Let's talk</h3>
+                <form class="w-full lg:w-4/5">
+                    <input class="border-2 border-gray-300 px-2 py-2 font-maven rounded-sm outline-none w-full lg:w-80 xl:w-[190px] xl:mx-2 lg:mx-0 mb-4 hover:border-yellow-300" type="text" placeholder="Your name">
+                    <input class="border-2 border-gray-300 px-2 py-2 font-maven rounded-sm outline-none w-full lg:w-80 xl:w-[190px] mb-4 xl:mx-6 lg:mx-0 hover:border-yellow-300" type="email" placeholder="Email">
+                    </br>
+                    <textarea class="border-2 border-gray-300  font-maven rounded-sm outline-none w-full lg:w-80 xl:w-[420px] xl:h-[210px] lg:mx-2 px-4 py-2 hover:border-yellow-300" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class=" btn  w-full lg:w-auto bg-yellow-400  text-white  my-4 mx-0 lg:mx-32 float-right hover:bg-slate-700 ">Send Button</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end contact section -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/owl.carousel.main.js"></script>
     <script src="./js/main.js"></script>
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- headroom.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
