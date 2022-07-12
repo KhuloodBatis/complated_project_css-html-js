@@ -13,8 +13,12 @@ $(document).ready(function() {
                 nav: true
             },
 
-        }
+        },
 
+    });
+
+    $('.color-mood').click(function() {
+        $('body').toggleClass('dark-mood')
     });
     var typed = new Typed(".element-hey", {
         strings: [" Marvel Sann ", "Web Designer", " UI Specialist"],
@@ -24,4 +28,10 @@ $(document).ready(function() {
         showCursor: false,
 
     });
+    var myElement = document.querySelector(".navbar");
+
+    var headroom = new Headroom(myElement);
+
+    headroom.init();
+
 });

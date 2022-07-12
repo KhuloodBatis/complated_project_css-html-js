@@ -1,179 +1,245 @@
-        @tailwind base;
-        @tailwind components;
-        .navbar {
-            @apply px-4 py-2 pt-4 flex justify-between flex-wrap;
-        }
-        
-        @screen md {
+            @tailwind base;
+            @tailwind components;
             .navbar {
-                @apply px-2;
+                @apply px-4 py-2 pt-4 flex justify-between flex-wrap;
             }
-        }
-        
-        .menuIcon {
-            @apply cursor-pointer px-4 py-4;
-        }
-        
-        @screen md {
+            
+            @screen md {
+                .navbar {
+                    @apply px-2;
+                }
+            }
+            
             .menuIcon {
-                @apply hidden;
+                @apply cursor-pointer px-4 py-4;
             }
-        }
-        
-        .menuItems {
-            @apply text-center hidden;
-        }
-        
-        @screen md {
+            
+            @screen md {
+                .menuIcon {
+                    @apply hidden;
+                }
+            }
+            
             .menuItems {
-                @apply flex text-center;
+                @apply text-center flex-row hidden;
             }
-        }
-        
-        @screen md {
-            .ul {
-                @apply pt-0 flex flex-grow justify-center
+            
+            @screen md {
+                .menuItems {
+                    @apply flex text-center;
+                }
             }
-        }
-        
-        .colorMode {
-            @apply flex float-right px-[130px] gap-x-3
-        }
-        
-        @screen md {
+            
+            @screen md {
+                .ul {
+                    @apply flex flex-grow justify-center
+                }
+            }
+            
+            .ul-hover:hover {
+                @apply text-yellow-400 text-2xl font-bold;
+            }
+            
             .colorMode {
-                @apply flex justify-center mt-5 px-[160px]
+                @apply flex float-right px-[130px] gap-x-3
             }
-        }
-        
-        .header-hero {
-            @apply flex px-4 flex-col justify-center;
-        }
-        
-        @screen md {
+            
+            @screen md {
+                .colorMode {
+                    @apply flex justify-center mt-5 px-[160px]
+                }
+            }
+            
             .header-hero {
-                @apply px-4 flex-row
+                @apply flex px-4 flex-col justify-center;
             }
-        }
-        
-        .welcom {
-            @apply px-4 py-2 font-semibold text-textColor capitalize;
-        }
-        
-        .hey {
-            @apply text-4xl font-semibold my-4;
-        }
-        
-        .building {
-            @apply mb-4 text-textColor tracking-wide text-lg;
-        }
-        
-        .btn {
-            @apply w-full mx-2 px-8 py-3 font-semibold rounded-3xl;
-        }
-        
-        .owl-stage>img {
-            @apply max-w-6xl inline-block !important
-        }
-        
-        .owl-prev>span {
-            @apply hidden
-        }
-        
-        .owl-prev::before {
-            content: "\f060";
-            background: none;
-            padding: 0;
-            display: block;
-            position: absolute;
-            top: 50%;
-            transform: translate(0;
-            -50%);
-            font-family: "FontAwesome";
-            color: #47465A;
-            font-size: 70px;
-            left: 10px;
-            -webkit-text-stroke: 3px white;
-        }
-        
-        .owl-next>span {
-            @apply hidden
-        }
-        
-        .owl-next::before {
-            content: "\f061";
-            background: none;
-            padding: 0;
-            display: block;
-            position: absolute;
-            top: 50%;
-            transform: translate(0;
-            -50%);
-            font-family: "FontAwesome";
-            color: #47465A;
-            font-size: 70px;
-            right: 10px;
-            -webkit-text-stroke: 3px white;
-        }
-        
-        @screen md {
+            
+            @screen md {
+                .header-hero {
+                    @apply px-4 flex-row
+                }
+            }
+            
+            .welcom {
+                @apply px-4 py-2 font-semibold text-textColor capitalize;
+            }
+            
+            .hey {
+                @apply text-4xl font-semibold my-4;
+            }
+            
+            .building {
+                @apply mb-4 text-textColor tracking-wide text-lg;
+            }
+            
+            .btn {
+                @apply w-full mx-2 px-8 py-3 font-semibold rounded-3xl;
+            }
+            
+            .owl-stage>img {
+                @apply max-w-6xl inline-block !important
+            }
+            
+            .owl-prev>span {
+                @apply hidden
+            }
+            
             .owl-prev::before {
-                left: 2px;
-                font-size: 60px;
+                content: "\f060";
+                background: none;
+                padding: 0;
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translate(0;
+                -50%);
+                font-family: "FontAwesome";
+                color: #47465A;
+                font-size: 70px;
+                left: 10px;
+                -webkit-text-stroke: 3px white;
             }
+            
+            .owl-next>span {
+                @apply hidden
+            }
+            
             .owl-next::before {
-                right: 2px;
-                font-size: 60px;
+                content: "\f061";
+                background: none;
+                padding: 0;
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translate(0;
+                -50%);
+                font-family: "FontAwesome";
+                color: #47465A;
+                font-size: 70px;
+                right: 10px;
+                -webkit-text-stroke: 3px white;
             }
-        }
-        
-        .timeline-yr>span {
-            top: 50 %;
-            left: 50%;
-            @apply absolute text-white font-semibold transform -translate-x-1/2 translate-y-6;
-        }
-        
-        .timeline::before {
-            content: "";
-            background: #47465A;
-            width: 3px;
-            height: 100%;
-            position: absolute;
-            left: 38px;
-        }
-        
-        .timeline-yr {
-            @apply w-20 h-20 bg-secondryColor rounded-full relative float-left mr-4;
-        }
-        
-        .timeline-type {
-            @apply capitalize font-bold text-4xl text-headingColor mb-8;
-        }
-        
-        .timeline-title {
-            @apply capitalize text-headingColor font-bold text-2xl ml-4;
-        }
-        
-        .timeline-subtitle {
-            @apply capitalize text-base text-secondryColor font-black;
-        }
-        
-        .timeline-pragraph {
-            @apply text-textColor tracking-wide text-lg font-light ml-24;
-        }
-        
-        .mapouter {
-            position: relative;
-            text-align: right;
-            height: 400px;
-            width: 500px;
-        }
-        
-        .gmap_canvas {
-            overflow: hidden;
-            background: none!important;
-            height: 400px;
-            width: 500px;
-        }
-        
-        @tailwind utilities;
+            
+            @screen md {
+                .owl-prev::before {
+                    left: 2px;
+                    font-size: 60px;
+                }
+                .owl-next::before {
+                    right: 2px;
+                    font-size: 60px;
+                }
+            }
+            
+            .timeline-yr>span {
+                top: 50 %;
+                left: 50%;
+                @apply absolute text-white font-semibold transform -translate-x-1/2 translate-y-6;
+            }
+            
+            .timeline::before {
+                content: "";
+                background: #47465A;
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: 38px;
+            }
+            
+            .timeline-yr {
+                @apply w-20 h-20 bg-secondryColor rounded-full relative float-left mr-4;
+            }
+            
+            .timeline-type {
+                @apply capitalize font-bold text-4xl text-headingColor mb-8;
+            }
+            
+            .timeline-title {
+                @apply capitalize text-headingColor font-bold text-2xl ml-4;
+            }
+            
+            .timeline-subtitle {
+                @apply capitalize text-base text-secondryColor font-black;
+            }
+            
+            .timeline-pragraph {
+                @apply text-textColor tracking-wide text-lg font-light ml-24;
+            }
+            
+            .mapouter {
+                position: relative;
+                text-align: right;
+                height: 400px;
+                width: 400px;
+            }
+            
+            .gmap_canvas {
+                overflow: hidden;
+                background: none!important;
+                height: 400px;
+                width: 400px;
+            }
+            
+            .headroom--pinned {
+                display: flex;
+                position: fixed;
+                background-color: #fff;
+                z-index: 9999;
+                max-width: 100%;
+                box-shadow: 0px 1px 20px #66666638;
+            }
+            
+            .headroom--unpinned {
+                display: none;
+            }
+            
+            .headroom--top {
+                box-shadow: none;
+                position: static;
+            }
+            /* dark mood  */
+            
+            .dark-mood {
+                background-color: #0c0c0d;
+            }
+            
+            .dark-mood .navbar {
+                color: white;
+                background-color: #0c0c0d;
+            }
+            
+            .dark-mood .welcom {
+                color: white;
+                background: #0d0c15;
+                border-radius: 50px;
+            }
+            
+            .dark-mood .hey {
+                color: white;
+            }
+            
+            .dark-mood.headroom--pinned {
+                border-bottom: #1b1b1b;
+                box-shadow: none;
+            }
+            
+            .dark-mood .ps-heading {
+                color: white
+            }
+            
+            .dark-mood .cs-heading {
+                color: white;
+            }
+            
+            .dark-mood.input,
+            .dark-mood.textarea {
+                color: white;
+                background-color: #0c0c0d;
+            }
+            
+            .dark-mood.input:hover,
+            .dark-mood.textarea:hover {
+                border-color: yellow;
+            }
+            
+            @tailwind utilities;
